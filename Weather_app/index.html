@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <section
+      class="d-flex justify-content-center align-items-center background"
+    >
+      <section
+        class="box d-flex p-5 justify-content-center flex-column text-light"
+      >
+        <div class="w-100 justify-content-center d-flex">
+          <input
+            class="fs-5 search-input rounded-pill"
+            type="text"
+            placeholder="Search"
+          />
+          <div
+            onclick="searchfunction()"
+            value="Kerala"
+            class="search-button rounded-circle hand mx-2"
+          >
+            <i class="fa fa-search text-light" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="loading">
+          <h2 class="load py-2">Loading...</h2>
+        </div>
+        <section class="loaded">
+          <div class="head-info">
+            <h2 class="py-4 city">Weather in Kerala</h2>
+            <div class="h1 temp">Temp</div>
+          </div>
+          <div class="d-flex">
+            <img
+              class="image"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt=""
+            />
+            <div class="description d-flex align-items-center fs-5 py-3">
+              Description
+            </div>
+          </div>
+
+          <div class="fs-5 humidity">Humidity</div>
+          <p class="fs-5 m-0 wind">Wind speed</p>
+        </section>
+      </section>
+    </section>
+  </body>
+  <script src="./app.js"></script>
+</html>

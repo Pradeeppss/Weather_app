@@ -1,0 +1,32 @@
+.background {
+  background-color: gray;
+  background-size: cover;
+  height: 100vh;
+}
+.box {
+  box-sizing: border-box;
+  width: 500px;
+  height: auto;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 2rem;
+}
+.search-input,
+.search-button {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 18px;
+  color: white;
+}
+.search-input {
+  width: 100%;
+}
+.hand {
+  cursor: pointer;
+}
+.image {
+  height: 5rem;
+}
+.loaded {
+  display: none;
+}
